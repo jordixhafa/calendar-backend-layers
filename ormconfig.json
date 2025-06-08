@@ -1,0 +1,10 @@
+
+{
+  "type": "sqlite",
+  "database": ":memory:",
+  "dropSchema": true,
+  "synchronize": true,
+  "entities": ["src/models/**/*.ts"],
+  "logging": false
+}
+

@@ -1,0 +1,18 @@
+// Auth test
+import request from 'supertest';
+import { app } from '../src/app';
+import { connectDB } from '../src/config/db';
+
+beforeAll(async () => { await connectDB(); });
+
+describe('Auth', () => {
+  it('should register, login and reject duplicate email', async () => {
+    const u = { name: 'Test', email: 't@example.com', password: '12345678' };
+    const res1 = await request(app).post('/api/auth/register').send(u);
+    expect(res1.status).toBe(201);
+    const res2 = await request(app).post('/api/auth/register').send(u);
+    expect(res2.status).toBe(400);
+    const res3 = await request(app).post('/api/auth/login').send({ email: u.email, password: u.password });
+    expect(res3.body).toHaveProperty('token');
+  });
+});
