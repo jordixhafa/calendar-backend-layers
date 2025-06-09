@@ -1,10 +1,16 @@
 
-{
-  "type": "sqlite",
-  "database": ":memory:",
-  "dropSchema": true,
-  "synchronize": true,
-  "entities": ["src/models/**/*.ts"],
-  "logging": false
-}
 
+
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "jordixhafa",
+  "password": "postgres",
+  "database": "calendar_app",
+  "synchronize": true,
+  "logging": false,
+  "entities": ["src/models/**/*.ts"],
+  "migrations": ["src/migrations/**/*.ts"],
+  "subscribers": ["src/subscribers/**/*.ts"]
+}

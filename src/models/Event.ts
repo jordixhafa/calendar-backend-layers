@@ -17,10 +17,10 @@ export class Event {
   @Column('text')
   description!: string;
 
-  @Column('datetime')
+  @Column('timestamp')
   start!: Date;
 
-  @Column('datetime')
+  @Column('timestamp')
   end!: Date;
 
   @Column()
@@ -29,7 +29,7 @@ export class Event {
   @Column({ default: 0 })
   reminderMinutesBefore!: number;
 
-  @Column({ type: 'varchar', default: 'none' })
+  @Column({ type: 'enum', enum: ['none','daily','weekly'], default: 'none' })
   recurrence!: Recurrence;
 
   @ManyToOne(() => User, u => u.events, { onDelete: 'CASCADE' })
