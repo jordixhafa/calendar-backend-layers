@@ -1,0 +1,27 @@
+import request from 'supertest';
+import { app } from '../src/app';
+import { AppDataSource } from '../src/config/db';
+
+beforeAll(async () => {
+  if (!AppDataSource.isInitialized) {
+    await AppDataSource.initialize();
+  }
+});
+
+afterAll(async () => {
+  if (AppDataSource.isInitialized) {
+    await AppDataSource.destroy();
+  }
+});
+
+describe('User Tests', () => {
+  it('should register a new user', async () => {
+    const res = await request(app).post('/api/auth/register').send({
+      name: 'Test User',
+      email: 'test4@example.com',
+      password: 'password123',
+    });
+
+    expect(res.statusCode).toBe(201);
+  });
+});

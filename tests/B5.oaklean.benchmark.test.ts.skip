@@ -1,0 +1,68 @@
+//import oaklean from 'oaklean';
+import { Like } from 'typeorm';
+import { AppDataSource } from '../src/config/db';
+import { User } from '../src/models/User';
+import { Event } from '../src/models/Event';
+import fs from 'fs/promises';
+
+const NUM_USERS = 100;
+
+beforeAll(async () => {
+  if (!AppDataSource.isInitialized) {
+    await AppDataSource.initialize();
+  }
+});
+
+afterAll(async () => {
+  const userRepo = AppDataSource.getRepository(User);
+  await userRepo.delete({ email: Like('%@oaklean.test') }); // Clean test data
+  await AppDataSource.destroy();
+});
+
+describe('Energy profiling of app layers', () => {
+  test('Database Layer - User Creation', async () => {
+    const profiler = await oaklean.start('DB-UserCreate');
+
+    const userRepo = AppDataSource.getRepository(User);
+    const users = Array.from({ length: NUM_USERS }, (_, i) =>
+      userRepo.create({
+        name: `User ${i}`,
+        email: `user${i}@oaklean.test`,
+        password: `pass${i}`,
+      })
+    );
+    await userRepo.save(users);
+
+    await profiler.stop({ output: 'oak-db-user.json' });
+  });
+
+  test('Business Logic Layer - Event Classification', async () => {
+    const profiler = await oaklean.start('Logic-EventClassify');
+
+    const eventRepo = AppDataSource.getRepository(Event);
+    const events = await eventRepo.find({ relations: ['owner'] });
+
+    const eventsByDay = events.reduce((acc, event) => {
+      const day = new Date(event.start).toISOString().split('T')[0];
+      if (!acc[day]) acc[day] = [];
+      acc[day].push(event);
+      return acc;
+    }, {} as Record<string, Event[]>);
+
+    expect(Object.keys(eventsByDay).length).toBeGreaterThan(0);
+
+    await profiler.stop({ output: 'oak-classify.json' });
+  });
+
+  test('I/O Layer - Export to file', async () => {
+    const profiler = await oaklean.start('IO-Export');
+
+    const eventRepo = AppDataSource.getRepository(Event);
+    const events = await eventRepo.find();
+
+    await fs.writeFile('./exports/events.json', JSON.stringify(events, null, 2));
+
+    await profiler.stop({ output: 'oak-export.json' });
+  });
+});
+

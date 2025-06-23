@@ -7,7 +7,7 @@ beforeAll(async () => { await connectDB(); });
 
 describe('Auth', () => {
   it('should register, login and reject duplicate email', async () => {
-    const u = { name: 'Test', email: 't@example.com', password: '12345678' };
+    const u = { name: 'Test', email: 't3@example.com', password: '12345678' };
     const res1 = await request(app).post('/api/auth/register').send(u);
     expect(res1.status).toBe(201);
     const res2 = await request(app).post('/api/auth/register').send(u);
