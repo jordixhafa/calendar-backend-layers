@@ -1,0 +1,27 @@
+--- Run 1 ---
+Total Energy Impact: 3736.47
+Execution Time (s): 18.62
+
+--- Run 2 ---
+Total Energy Impact: 7868.72
+Execution Time (s): 22.97
+
+--- Run 3 ---
+Total Energy Impact: 6608.30
+Execution Time (s): 23.62
+
+--- Run 4 ---
+Total Energy Impact: 9578.95
+Execution Time (s): 30.33
+
+--- Run 5 ---
+Total Energy Impact: 14652.72
+Execution Time (s): 35.74
+
+--- Run 6 ---
+Total Energy Impact: 13868.82
+Execution Time (s): 33.99
+
+=== FINAL AVERAGE TOTALS ===
+Average Total Energy Impact: 9385.66
+Average Execution Time (s): 27.54

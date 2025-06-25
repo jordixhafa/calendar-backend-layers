@@ -1,0 +1,66 @@
+--- Run 1 ---
+Total Energy Impact: 2710.34
+Execution Time (s): 12.93
+
+--- Run 2 ---
+Total Energy Impact: 3347.03
+Execution Time (s): 12.77
+
+--- Run 3 ---
+Total Energy Impact: 6202.43
+Execution Time (s): 16.74
+
+--- Run 1 ---
+Total Energy Impact: 465.81
+Execution Time (s): 3.04
+
+--- Run 2 ---
+Total Energy Impact: 495.07
+Execution Time (s): 2.69
+
+--- Run 3 ---
+Total Energy Impact: 433.42
+Execution Time (s): 2.63
+
+--- Run 4 ---
+Total Energy Impact: 499.03
+Execution Time (s): 2.67
+
+--- Run 5 ---
+Total Energy Impact: 473.01
+Execution Time (s): 2.65
+
+--- Run 6 ---
+Total Energy Impact: 393.37
+Execution Time (s): 2.66
+
+=== FINAL AVERAGE TOTALS ===
+Average Total Energy Impact: 459.95
+Average Execution Time (s): 2.72
+--- Run 1 ---
+Total Energy Impact: 2741.04
+Execution Time (s): 11.26
+
+--- Run 2 ---
+Total Energy Impact: 2110.97
+Execution Time (s): 10.78
+
+--- Run 3 ---
+Total Energy Impact: 2381.03
+Execution Time (s): 10.96
+
+--- Run 4 ---
+Total Energy Impact: 3355.35
+Execution Time (s): 12.03
+
+--- Run 5 ---
+Total Energy Impact: 4600.64
+Execution Time (s): 12.94
+
+--- Run 6 ---
+Total Energy Impact: 4882.34
+Execution Time (s): 13.36
+
+=== FINAL AVERAGE TOTALS ===
+Average Total Energy Impact: 3345.23
+Average Execution Time (s): 11.89
