@@ -1,0 +1,41 @@
+--- Run 1 ---
+Node Energy: 14458.83
+Postgres Energy: 8652.78
+Total Energy Impact: 23111.61
+Execution Time (s): 55.93
+
+--- Run 2 ---
+Node Energy: 16723.13
+Postgres Energy: 14238.95
+Total Energy Impact: 30962.08
+Execution Time (s): 81.77
+
+--- Run 3 ---
+Node Energy: 15612.54
+Postgres Energy: 11270.83
+Total Energy Impact: 26883.37
+Execution Time (s): 84.00
+
+--- Run 4 ---
+Node Energy: 14664.91
+Postgres Energy: 12693.00
+Total Energy Impact: 27357.91
+Execution Time (s): 76.43
+
+--- Run 5 ---
+Node Energy: 14619.87
+Postgres Energy: 13481.30
+Total Energy Impact: 28101.17
+Execution Time (s): 79.10
+
+--- Run 6 ---
+Node Energy: 16168.23
+Postgres Energy: 14217.23
+Total Energy Impact: 30385.46
+Execution Time (s): 85.36
+
+=== FINAL AVERAGE TOTALS ===
+Average Node Energy: 15374.59
+Average Postgres Energy: 12425.68
+Average Total Energy: 27800.27
+Average Execution Time (s): 77.10

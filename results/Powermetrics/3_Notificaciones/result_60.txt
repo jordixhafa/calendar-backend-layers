@@ -1,0 +1,11 @@
+--- Run 1 ---
+Node Energy: 457.38
+Postgres Energy: 0.00
+Total Energy Impact: 457.38
+Execution Time (s): 6.01
+
+=== FINAL AVERAGE TOTALS ===
+Average Node Energy: 457.38
+Average Postgres Energy: 0.00
+Average Total Energy: 457.38
+Average Execution Time (s): 6.01

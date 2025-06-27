@@ -1,0 +1,7 @@
+=== AVERAGED METRICS OVER 2 RUNS ===
+
+Total Elapsed Time (sec): No data
+Cumulative Package Energy_0 (Joules): No data
+Average Package Power_0 (Watt): No data
+Cumulative DRAM Energy_0 (Joules): No data
+Average Package DRAM_0 (Watt): No data
