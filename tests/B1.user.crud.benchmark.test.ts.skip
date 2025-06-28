@@ -12,7 +12,7 @@ const createTestUser = (index: number): Partial<User> => ({
   password: `password${index}`
 });
 
-const N = 3000; // Change this according to the different numbers of users
+const N = 18000; // Change this according to the different numbers of users
 
 beforeAll(async () => {
   dataSource = await AppDataSource.initialize();

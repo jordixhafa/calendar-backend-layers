@@ -1,0 +1,15 @@
+--- Run 1 ---
+Total Elapsed Time (sec): 8.405
+Cumulative Package Energy_0 (Joules): 554.221
+Average Package Power_0 (Watt): 65.940
+Cumulative DRAM Energy_0 (Joules): 16.457
+Average Package DRAM_0 (Watt): 1.958
+Actual Test Execution Time (s): 7.834
+
+=== FINAL AVERAGE TOTALS ===
+Total Elapsed Time (sec): 8.405
+Cumulative Package Energy_0 (Joules): 554.221
+Average Package Power_0 (Watt): 65.940
+Cumulative DRAM Energy_0 (Joules): 16.457
+Average Package DRAM_0 (Watt): 1.958
+Average Actual Test Execution Time (s): 7.834
