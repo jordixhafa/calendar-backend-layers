@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 
 # === Configuration ===
-RUN_ID = 18000
+RUN_ID = 3000
 NUM_RUNS = 4
 SLEEP_BETWEEN_RUNS = 20 # seconds
 DURATION = 65  # Duration of PowerLog in seconds

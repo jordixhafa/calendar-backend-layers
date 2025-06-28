@@ -1,0 +1,31 @@
+{
+  "exportOptions": {
+    "outDir": "profiles/",
+    "outHistoryDir": "profiles_history/",
+    "rootDir": "./",
+    "exportV8Profile": false,
+    "exportReport": true,
+    "exportSensorInterfaceData": false
+  },
+  "projectOptions": {
+    "identifier": "38b0dbae-00d1-43d1-b8d1-2a12c0529ca2"
+  },
+  "runtimeOptions": {
+    "seeds": {},
+    "v8": {
+      "cpu": {
+        "sampleInterval": 0
+      }
+    },
+    "sensorInterface": {
+  "type": "powermetrics",
+  "options": {
+    "outputFilePath": "oaklean-energy.plist",
+    "sampleInterval": 100
+  }
+}
+
+
+    
+  }
+}

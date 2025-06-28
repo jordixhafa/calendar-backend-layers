@@ -12,7 +12,7 @@ const createTestUser = (index: number): Partial<User> => ({
   password: `password${index}`
 });
 
-const N = 18000; // Change this according to the different numbers of users
+const N = 100; // Change this according to the different numbers of users
 
 beforeAll(async () => {
   dataSource = await AppDataSource.initialize();
@@ -20,7 +20,7 @@ beforeAll(async () => {
 });
 
 afterAll(async () => {
-  await dataSource.destroy();
+  await dataSource.destroy(); 
 });
 
 describe(`CRUD operations for ${N} users`, () => {
