@@ -3,10 +3,10 @@ import { AppDataSource } from '../src/config/db';
 import { User } from '../src/models/User';
 import { Event, Recurrence } from '../src/models/Event';
 
-jest.setTimeout(500000); // 500 seconds
+jest.setTimeout(500000); 
 
 let dataSource: DataSource;
-const EVENT_COUNT = Number(process.env.EVENT_COUNT || 18000);
+const EVENT_COUNT = Number(process.env.EVENT_COUNT || 18000); //Number of events
 
 let testUser: User;
 
@@ -75,6 +75,4 @@ describe(`CRUD operations for ${EVENT_COUNT} events`, () => {
       expect(updated.title).toMatch(/Updated$/);
     }
   });
-
-  // No need to manually delete events; cascaded by user deletion in afterAll
 });

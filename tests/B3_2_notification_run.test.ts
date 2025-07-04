@@ -16,7 +16,7 @@ beforeAll(async () => {
 
 afterAll(async () => {
   await dataSource.destroy();
-  process.exit(0); // Force exit to prevent lingering handles
+  process.exit(0); // Force exit to prevent waiting for notifications to arrive
 });
 
 const notifyUsersOfEvents = async (events: Event[]) => {

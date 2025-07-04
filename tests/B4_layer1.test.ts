@@ -42,7 +42,7 @@ describe(`Layer 1 - Creates ${NUM_USERS} users and events`, () => {
         description: `Auto-generated event for ${savedUser.name}`,
         start: new Date(now + (i % 24) * 3600000),
         end: new Date(now + ((i % 24) * 3600000) + 1800000),
-        label: recurrence, // Keep label consistent with recurrence for classification
+        label: recurrence, 
         reminderMinutesBefore: i % 15,
         recurrence,
         invitees: [savedUser.email],

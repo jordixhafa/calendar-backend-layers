@@ -3,7 +3,7 @@ import { AppDataSource } from '../src/config/db';
 import { User } from '../src/models/User';
 import { Event } from '../src/models/Event';
 
-jest.setTimeout(500000); // For large benchmarks
+jest.setTimeout(500000); 
 
 let dataSource: DataSource;
 const NOTIFY_USER_COUNT = 100;
@@ -15,7 +15,7 @@ const msInDay = msInHour * 24;
 beforeAll(async () => {
   dataSource = await AppDataSource.initialize();
 
-  // Clear out previous users and events
+  // Delete previous users and events
   await dataSource.createQueryBuilder().delete().from(Event).execute();
   await dataSource.createQueryBuilder().delete().from(User).execute();
 

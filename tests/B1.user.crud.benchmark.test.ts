@@ -2,7 +2,7 @@ import { DataSource } from 'typeorm';
 import { User } from '../src/models/User';
 import { AppDataSource } from '../src/config/db'; 
 
-jest.setTimeout(500000); // 500 seconds
+jest.setTimeout(500000); 
 
 let dataSource: DataSource;
 
@@ -12,7 +12,7 @@ const createTestUser = (index: number): Partial<User> => ({
   password: `password${index}`
 });
 
-const N = 100; // Change this according to the different numbers of users
+const N = 100; // Number of users
 
 beforeAll(async () => {
   dataSource = await AppDataSource.initialize();

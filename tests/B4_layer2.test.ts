@@ -30,7 +30,7 @@ describe('Business Logic Layer - Event Classification', () => {
 
     expect(Object.keys(eventsByDay).length).toBeGreaterThan(0);
 
-    // Optional logging
+    
     console.log(`Classified events into ${Object.keys(eventsByDay).length} unique day(s).`);
   });
 });
