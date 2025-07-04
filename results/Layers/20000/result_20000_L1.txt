@@ -1,0 +1,39 @@
+--- Run 1 ---
+Total Elapsed Time (sec): 40.898
+Cumulative Package Energy_0 (Joules): 1024.968
+Average Package Power_0 (Watt): 25.062
+Cumulative DRAM Energy_0 (Joules): 27.702
+Average Package DRAM_0 (Watt): 0.677
+Actual Test Execution Time (s): 31.095
+
+--- Run 2 ---
+Total Elapsed Time (sec): 40.884
+Cumulative Package Energy_0 (Joules): 1045.996
+Average Package Power_0 (Watt): 25.585
+Cumulative DRAM Energy_0 (Joules): 27.719
+Average Package DRAM_0 (Watt): 0.678
+Actual Test Execution Time (s): 34.171
+
+--- Run 3 ---
+Total Elapsed Time (sec): 40.869
+Cumulative Package Energy_0 (Joules): 954.873
+Average Package Power_0 (Watt): 23.364
+Cumulative DRAM Energy_0 (Joules): 27.601
+Average Package DRAM_0 (Watt): 0.675
+Actual Test Execution Time (s): 37.122
+
+--- Run 4 ---
+Total Elapsed Time (sec): 40.761
+Cumulative Package Energy_0 (Joules): 955.056
+Average Package Power_0 (Watt): 23.431
+Cumulative DRAM Energy_0 (Joules): 27.640
+Average Package DRAM_0 (Watt): 0.678
+Actual Test Execution Time (s): 36.791
+
+=== FINAL AVERAGE TOTALS ===
+Total Elapsed Time (sec): 40.853
+Cumulative Package Energy_0 (Joules): 995.223
+Average Package Power_0 (Watt): 24.360
+Cumulative DRAM Energy_0 (Joules): 27.665
+Average Package DRAM_0 (Watt): 0.677
+Average Actual Test Execution Time (s): 34.795
