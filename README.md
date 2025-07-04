@@ -1,7 +1,11 @@
-# Awesome Project Build with TypeORM
+# Consumo energético de una Aplicación de Calendario con arquitectura por capas
 
-Steps to run this project:
+Contenido de las carpetas:
 
-1. Run `npm i` command
-2. Setup database settings inside `data-source.ts` file
-3. Run `npm start` command
+- **src**:  Código de la aplicación
+- **tests**:  Tests funcionales (1,2,3) y de rendimiento (B1,B2,B3,B4)
+- **metrics**:  Métricas raw generadas por las herramientas powermetrics e Intel Power Gadget
+- **Scripts**:  Scripts para iniciar y terminar las mediciones, ejecutar N repeticiones de los tests, y extraer resultados medios y acumulados
+- **results**:  Ficheros de resultados generados por los Scripts
+- **exports**:  Ficheros json exportados por la capa I/O del test por capas
+
